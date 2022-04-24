@@ -23,6 +23,12 @@ namespace WF_HW_2
                 + e.Y.ToString();
         }
 
+        private string PanelCoordinatesToString(MouseEventArgs e)
+        {
+            return "Координаты мышки: X= " + (e.X + panel2.Location.X).ToString() + "; Y= "
+                + (e.Y+panel2.Location.Y).ToString();
+        }
+
 
 
 
@@ -42,7 +48,7 @@ namespace WF_HW_2
 
         private void panel2_MouseMove(object sender, MouseEventArgs e)
         {
-            Text = CoordinatesToString(e);
+            Text = PanelCoordinatesToString(e);
         }
 
         private void panel1_MouseClick(object sender, MouseEventArgs e)
@@ -68,7 +74,7 @@ namespace WF_HW_2
             string caption = "Задание с координатами";
             if (e.Button == MouseButtons.Left)
             {
-                if (e.X == 0 || e.Y == 0)
+                if (e.Location.X == panel1.Location.X + panel2.Location.X || e.Location.Y == panel1.Location.Y + panel2.Location.Y)
                 {
                     message = "Клик на границе синей зоны";
                     MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);

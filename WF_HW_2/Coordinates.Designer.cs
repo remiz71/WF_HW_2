@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,16 +46,6 @@
             this.panel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseClick);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.SkyBlue;
-            this.panel2.Location = new System.Drawing.Point(126, 38);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(543, 332);
-            this.panel2.TabIndex = 0;
-            this.panel2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseClick);
-            this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(302, 409);
@@ -65,6 +55,16 @@
             this.button1.Text = "Вернуться в меню";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel2.Location = new System.Drawing.Point(10, 10);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(776, 332);
+            this.panel2.TabIndex = 0;
+            this.panel2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseClick);
+            this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
             // 
             // Coordinates
             // 
